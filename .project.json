@@ -16,6 +16,11 @@
       "templateId": "OVP.smartovptemplate",
       "templateVersion": "1.41.1",
       "dateTimeStamp": "Thu, 24 Jan 2019 13:59:18 GMT"
+    },
+    {
+      "templateId": "OVP.cardtemplate",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Thu, 24 Jan 2019 15:06:38 GMT"
     }
   ],
   "translation": {
