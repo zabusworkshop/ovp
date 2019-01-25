@@ -55,6 +55,43 @@
 					</Collection>
 				</Annotation>
 			</Annotations>
+			<Annotations Target="NorthwindModel.Summary_of_Sales_by_Year">
+				<Annotation Term="UI.PresentationVariant" Qualifier="MaxItems">
+					<Record Type="UI.PresentationVariantType">
+						<PropertyValue Property="SortOrder"/>
+						<PropertyValue Property="GroupBy"/>
+						<PropertyValue Property="TotalBy"/>
+						<PropertyValue Property="Total"/>
+						<PropertyValue Property="Visualizations"/>
+						<PropertyValue Property="RequestAtLeast"/>
+						<PropertyValue Property="MaxItems" Int="10"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Chart" Qualifier="SalesByDate">
+					<Record Type="UI.ChartDefinitionType">
+						<PropertyValue Property="ChartType" EnumMember="UI.ChartType/Column"/>
+						<PropertyValue Property="Measures">
+							<Collection></Collection>
+						</PropertyValue>
+						<PropertyValue Property="MeasureAttributes">
+							<Collection>
+								<Record Type="UI.ChartMeasureAttributeType">
+									<PropertyValue Property="Measure" PropertyPath="Subtotal"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Dimensions"/>
+						<PropertyValue Property="DimensionAttributes">
+							<Collection>
+								<Record Type="UI.ChartDimensionAttributeType">
+									<PropertyValue Property="Dimension" PropertyPath="ShippedDate"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Actions"/>
+					</Record>
+				</Annotation>
+			</Annotations>
 		</Schema>
 	</edmx:DataServices>
 </edmx:Edmx>
