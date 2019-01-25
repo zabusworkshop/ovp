@@ -107,7 +107,7 @@
 					"title": "{{card01_title}}",
 					"subTitle": "{{card01_subTitle}}",
 					"entitySet": "Summary_of_Sales_by_Years",
-					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint",
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#SalesSum",
 					"presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#MaxItems",
 					"chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#SalesByDate",
 					"navigation": "dataPointNav",

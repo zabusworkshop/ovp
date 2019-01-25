@@ -56,6 +56,18 @@
 				</Annotation>
 			</Annotations>
 			<Annotations Target="NorthwindModel.Summary_of_Sales_by_Year">
+				<Annotation Term="UI.DataPoint" Qualifier="SalesSum">
+					<Record Type="UI.DataPointType">
+						<PropertyValue Property="Title" String="{@i18n&gt;card01_title}"/>
+						<PropertyValue Property="Value" Path="Subtotal"/>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record Type="UI.CriticalityCalculationType">
+								<PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/>
+								<PropertyValue Property="AcceptanceRangeLowValue" Int="400"/>
+							</Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
 				<Annotation Term="UI.PresentationVariant" Qualifier="MaxItems">
 					<Record Type="UI.PresentationVariantType">
 						<PropertyValue Property="SortOrder"/>
