@@ -10,3 +10,6 @@
 
 ## 3. Analytical Card
 Добавим карточку с графиком по продажам. Будем работать с коллекцией `Summary_of_Sales_by_Year`. Добавим на нее аннотацию `Chart`. `MeasureAttribute` - `Subtotal`, `DimensionAttribute` - `ShippedDate`. Чтобы уменьшить количество отображаемых столбцов добавим аннотацию `PresentationVariant` со свойством `MaxItems`. Чтобы аннотация `PresentationVariant` заработала, нужно добавить в `manifest` поле `presentationAnnotationPath` со ссылкой на `Qualifier` нашего `PresentationVariant`. Тоже самое нужно сделать с `Chart`, в `manifest` это свойство `chartAnnotationPath`.
+
+## 4. Table Card
+Добавим карточку с таблицей. Создаем ее через визард и прописываем `LineItem` c `DataField` для каждой колонки. Чтобы отображались заголовки колонок, каждому `DataField` нужно добавить `Label`.

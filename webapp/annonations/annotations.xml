@@ -71,7 +71,7 @@
 					<Record Type="UI.ChartDefinitionType">
 						<PropertyValue Property="ChartType" EnumMember="UI.ChartType/Column"/>
 						<PropertyValue Property="Measures">
-							<Collection></Collection>
+							<Collection/>
 						</PropertyValue>
 						<PropertyValue Property="MeasureAttributes">
 							<Collection>
@@ -90,6 +90,24 @@
 						</PropertyValue>
 						<PropertyValue Property="Actions"/>
 					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="NorthwindModel.Customer">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="CompanyName"/>
+							<PropertyValue Property="Label" String="Company name"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Country"/>
+							<PropertyValue Property="Label" String="Country"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="Phone"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;PHONE}"/>
+						</Record>
+					</Collection>
 				</Annotation>
 			</Annotations>
 		</Schema>

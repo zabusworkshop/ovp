@@ -108,10 +108,24 @@
 					"subTitle": "{{card01_subTitle}}",
 					"entitySet": "Summary_of_Sales_by_Years",
 					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint",
-					"presentationAnnotationPath" : "com.sap.vocabularies.UI.v1.PresentationVariant#MaxItems",
-					"chartAnnotationPath" : "com.sap.vocabularies.UI.v1.Chart#SalesByDate",
+					"presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#MaxItems",
+					"chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#SalesByDate",
 					"navigation": "dataPointNav",
 					"valueSelectionInfo": "{{card01_valueSelectionInfo}}"
+				}
+			},
+			"card02": {
+				"model": "Northwind",
+				"template": "sap.ovp.cards.table",
+				"settings": {
+					"title": "{{card02_title}}",
+					"subTitle": "{{card02_subTitle}}",
+					"entitySet": "Customers",
+					"sortBy": "CompanyName",
+					"sortOrder": "ascending",
+					"addODataSelect": false,
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint",
+					"valueSelectionInfo": "{{card02_valueSelectionInfo}}"
 				}
 			}
 		}
